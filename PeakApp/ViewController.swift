@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  PeakApp
-//
-//  Created by Office-iMac on 2022-05-13.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,7 +6,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-

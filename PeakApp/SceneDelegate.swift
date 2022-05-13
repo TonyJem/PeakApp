@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  PeakApp
-//
-//  Created by Office-iMac on 2022-05-13.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -46,7 +39,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
-
