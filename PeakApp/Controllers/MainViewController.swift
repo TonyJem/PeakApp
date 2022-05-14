@@ -20,6 +20,42 @@ class MainViewController: UIViewController {
         return view
     }()
     
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .white
+        
+        let text = "Опиши перевал"
+        label.text = text.uppercased()
+        label.textAlignment = .center
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .white
+        
+        let text = "Наполняем каталог перевалов вместе!"
+        label.text = text
+        label.textAlignment = .center
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let buttonLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .white
+        
+        let text = "Добавь название, фото и координаты"
+        label.text = text
+        label.textAlignment = .center
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +70,9 @@ class MainViewController: UIViewController {
     private func setupViews() {
         view.addSubview(heroImageView)
         view.addSubview(tagContainer)
+        view.addSubview(titleLabel)
+        view.addSubview(descriptionLabel)
+        view.addSubview(buttonLabel)
     }
 }
 
@@ -54,5 +93,25 @@ extension MainViewController {
             tagContainer.heightAnchor.constraint(equalToConstant: 60)
         ])
         
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            titleLabel.topAnchor.constraint(equalTo: tagContainer.bottomAnchor, constant: 20),
+            titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            titleLabel.heightAnchor.constraint(equalToConstant: 30)
+        ])
+        
+        NSLayoutConstraint.activate([
+            descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
+            descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            descriptionLabel.heightAnchor.constraint(equalToConstant: 30)
+        ])
+        
+        NSLayoutConstraint.activate([
+            buttonLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            buttonLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 20),
+            buttonLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            buttonLabel.heightAnchor.constraint(equalToConstant: 30)
+        ])
     }
 }
