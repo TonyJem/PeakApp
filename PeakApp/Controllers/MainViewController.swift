@@ -56,6 +56,19 @@ class MainViewController: UIViewController {
         return label
     }()
     
+    private lazy var enterButton: UIButton = {
+        let button = UIButton(type: .system)
+        
+        let title = "Войти"
+        button.setTitle(title.uppercased(), for: .normal)
+        
+        button.backgroundColor = .systemPink
+
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(didTapEnterButton), for: .touchUpInside)
+        return button
+    }()
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +79,11 @@ class MainViewController: UIViewController {
         setConstraints()
     }
     
+    // MARK: - Actions
+    @objc private func didTapEnterButton() {
+        print("🟢 didTapEnterButton in MainViewController")
+    }
+    
     // MARK: - Private Methods
     private func setupViews() {
         view.addSubview(heroImageView)
@@ -73,6 +91,7 @@ class MainViewController: UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(descriptionLabel)
         view.addSubview(buttonLabel)
+        view.addSubview(enterButton)
     }
 }
 
@@ -81,7 +100,7 @@ extension MainViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             heroImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            heroImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            heroImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5),
             heroImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             heroImageView.heightAnchor.constraint(equalToConstant: 450)
         ])
@@ -112,6 +131,13 @@ extension MainViewController {
             buttonLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 20),
             buttonLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             buttonLabel.heightAnchor.constraint(equalToConstant: 30)
+        ])
+        
+        NSLayoutConstraint.activate([
+            enterButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            enterButton.topAnchor.constraint(equalTo: buttonLabel.bottomAnchor, constant: 20),
+            enterButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            enterButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
