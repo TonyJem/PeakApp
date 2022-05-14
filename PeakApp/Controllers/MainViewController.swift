@@ -3,13 +3,14 @@ import UIKit
 class MainViewController: UIViewController {
     
     // MARK: - Views
-    private var testView: UIView {
-        let view = UIView()
-        view.backgroundColor = .blue
-        
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }
+    private let heroImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .white
+        imageView.image = UIImage(named: "hero")
+
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -18,12 +19,12 @@ class MainViewController: UIViewController {
         view.backgroundColor = .green
         
         setupViews()
-//        setConstraints()
+        setConstraints()
     }
     
     // MARK: - Private Methods
     private func setupViews() {
-        view.addSubview(testView)
+        view.addSubview(heroImageView)
     }
 }
 
@@ -31,10 +32,10 @@ class MainViewController: UIViewController {
 extension MainViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            testView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            testView.topAnchor.constraint(equalTo: view.topAnchor),
-            testView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            testView.heightAnchor.constraint(equalToConstant: 60)
+            heroImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            heroImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            heroImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            heroImageView.heightAnchor.constraint(equalToConstant: 450)
         ])
     }
 }
