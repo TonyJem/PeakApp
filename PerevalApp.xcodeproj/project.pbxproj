@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A3F830D282EC74000A6BEF7 /* PeakApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeakApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3F830D282EC74000A6BEF7 /* PerevalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerevalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3F8310282EC74000A6BEF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A3F8312282EC74000A6BEF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A3F8314282EC74000A6BEF7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		3A3F830E282EC74000A6BEF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A3F830D282EC74000A6BEF7 /* PeakApp.app */,
+				3A3F830D282EC74000A6BEF7 /* PerevalApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A3F830C282EC74000A6BEF7 /* PeakApp */ = {
+		3A3F830C282EC74000A6BEF7 /* PerevalApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A3F8321282EC74600A6BEF7 /* Build configuration list for PBXNativeTarget "PeakApp" */;
+			buildConfigurationList = 3A3F8321282EC74600A6BEF7 /* Build configuration list for PBXNativeTarget "PerevalApp" */;
 			buildPhases = (
 				3A3F8309282EC74000A6BEF7 /* Sources */,
 				3A3F830A282EC74000A6BEF7 /* Frameworks */,
@@ -112,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = PeakApp;
+			name = PerevalApp;
 			productName = PeakApp;
-			productReference = 3A3F830D282EC74000A6BEF7 /* PeakApp.app */;
+			productReference = 3A3F830D282EC74000A6BEF7 /* PerevalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A3F8308282EC74000A6BEF7 /* Build configuration list for PBXProject "PeakApp" */;
+			buildConfigurationList = 3A3F8308282EC74000A6BEF7 /* Build configuration list for PBXProject "PerevalApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A3F830C282EC74000A6BEF7 /* PeakApp */,
+				3A3F830C282EC74000A6BEF7 /* PerevalApp */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8J73Q43L2S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PeakApp/Resources/Info.plist;
+				INFOPLIST_FILE = PerevalApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -342,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8J73Q43L2S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PeakApp/Resources/Info.plist;
+				INFOPLIST_FILE = PerevalApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -365,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A3F8308282EC74000A6BEF7 /* Build configuration list for PBXProject "PeakApp" */ = {
+		3A3F8308282EC74000A6BEF7 /* Build configuration list for PBXProject "PerevalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A3F831F282EC74600A6BEF7 /* Debug */,
@@ -374,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A3F8321282EC74600A6BEF7 /* Build configuration list for PBXNativeTarget "PeakApp" */ = {
+		3A3F8321282EC74600A6BEF7 /* Build configuration list for PBXNativeTarget "PerevalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A3F8322282EC74600A6BEF7 /* Debug */,
