@@ -3,10 +3,10 @@ import UIKit
 class LoginViewController: UIViewController {
     
     // MARK: - Views
-    private let heroImageView: UIImageView = {
+    private let logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .white
-        imageView.image = UIImage(named: "hero")
+        imageView.image = UIImage(named: "logo")
+        imageView.contentMode = .scaleAspectFit
 
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private Methods
     private func setupViews() {
-        view.addSubview(heroImageView)
+        view.addSubview(logoImageView)
         view.addSubview(tagContainer)
         view.addSubview(titleLabel)
         view.addSubview(descriptionLabel)
@@ -103,15 +103,15 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            heroImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            heroImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5),
-            heroImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            heroImageView.heightAnchor.constraint(equalToConstant: 450)
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            logoImageView.widthAnchor.constraint(equalToConstant: 161 * 1.5),
+            logoImageView.heightAnchor.constraint(equalToConstant: 97 * 1.5)
         ])
         
         NSLayoutConstraint.activate([
             tagContainer.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            tagContainer.topAnchor.constraint(equalTo: heroImageView.bottomAnchor, constant: 20),
+            tagContainer.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 20),
             tagContainer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             tagContainer.heightAnchor.constraint(equalToConstant: 60)
         ])
