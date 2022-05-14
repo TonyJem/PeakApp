@@ -1,6 +1,6 @@
 import UIKit
 
-class LoginViewController: UIViewController {
+class WelcomeVC: UIViewController {
     
     // MARK: - Views
     private let logoImageView: UIImageView = {
@@ -83,7 +83,7 @@ class LoginViewController: UIViewController {
     @objc private func didTapEnterButton() {
         print("🟢 didTapEnterButton in LoginViewController")
         
-        let welcomeVC = WelcomeViewController()
+        let welcomeVC = RegistrationVC()
         welcomeVC.modalPresentationStyle = .fullScreen
         present(welcomeVC, animated: true)
     }
@@ -100,7 +100,7 @@ class LoginViewController: UIViewController {
 }
 
 // MARK: - SetConstraints
-extension LoginViewController {
+extension WelcomeVC {
     private func setConstraints() {
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),

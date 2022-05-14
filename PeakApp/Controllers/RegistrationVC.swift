@@ -1,6 +1,6 @@
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class RegistrationVC: UIViewController {
     
     // MARK: - Views
     private lazy var enterButton: UIButton = {
@@ -30,7 +30,7 @@ class WelcomeViewController: UIViewController {
     @objc private func didTapEnterButton() {
         print("🟢 didTapEnterButton in WelcomeViewController")
         
-        let mainVC = MainViewController()
+        let mainVC = MountainPassListVC()
         mainVC.modalPresentationStyle = .fullScreen
         present(mainVC, animated: true)
     }
@@ -42,7 +42,7 @@ class WelcomeViewController: UIViewController {
 }
 
 // MARK: - SetConstraints
-extension WelcomeViewController {
+extension RegistrationVC {
     private func setConstraints() {
         
         NSLayoutConstraint.activate([

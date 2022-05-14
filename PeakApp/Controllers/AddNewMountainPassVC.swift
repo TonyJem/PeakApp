@@ -1,6 +1,6 @@
 import UIKit
 
-class AddNekViewContoller: UIViewController {
+class AddNewMountainPassVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

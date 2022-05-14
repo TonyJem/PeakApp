@@ -1,6 +1,6 @@
 import UIKit
 
-class MainViewController: UIViewController {
+class MountainPassListVC: UIViewController {
     
     // MARK: - Views
     private lazy var addButton: UIButton = {
@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     @objc private func didTapAddButton() {
         print("🟢 didTapAddButton in MainViewController")
         
-        let addNewNekVC = AddNekViewContoller()
+        let addNewNekVC = AddNewMountainPassVC()
         addNewNekVC.modalPresentationStyle = .fullScreen
         present(addNewNekVC, animated: true)
     }
@@ -42,7 +42,7 @@ class MainViewController: UIViewController {
 }
 
 // MARK: - SetConstraints
-extension MainViewController {
+extension MountainPassListVC {
     private func setConstraints() {
         
         NSLayoutConstraint.activate([
