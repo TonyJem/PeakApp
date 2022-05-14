@@ -28,7 +28,7 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - Actions
     @objc private func didTapEnterButton() {
-        print("🟢 didTapEnterButton in LoginViewController")
+        print("🟢 didTapEnterButton in WelcomeViewController")
         
         let mainVC = MainViewController()
         mainVC.modalPresentationStyle = .fullScreen
@@ -53,4 +53,3 @@ extension WelcomeViewController {
         ])
     }
 }
-
