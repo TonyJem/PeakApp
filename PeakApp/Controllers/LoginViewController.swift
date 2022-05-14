@@ -83,9 +83,9 @@ class LoginViewController: UIViewController {
     @objc private func didTapEnterButton() {
         print("🟢 didTapEnterButton in LoginViewController")
         
-        let mainVC = MainViewController()
-        mainVC.modalPresentationStyle = .fullScreen
-        present(mainVC, animated: true)
+        let welcomeVC = WelcomeViewController()
+        welcomeVC.modalPresentationStyle = .fullScreen
+        present(welcomeVC, animated: true)
     }
     
     // MARK: - Private Methods
